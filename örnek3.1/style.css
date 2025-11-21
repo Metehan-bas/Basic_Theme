@@ -1,0 +1,179 @@
+html, body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main {
+  background-color: #3b2302;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.header {
+  background-color: #cccdb4;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-template {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 1000px;
+}
+
+.logo {
+  margin-top: 0px;
+}
+
+.logo h1 {
+  margin-bottom: 0;
+}
+
+.logo p {
+  margin-top: -5px;
+  color: #3b2302;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.buttons input {
+  width: 260px;
+  height: 30px; 
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons-row button {
+  color: white;
+  font-weight: bold;
+  background-color: #b1b0a9;
+  width: 100px;
+  height: 32px;
+  border: none;
+}
+
+.logoo {
+  width: 1000px;
+  margin: 20px auto 0;
+  padding: 20px;
+  text-align: start;
+
+}
+
+.logoo #a {
+  color: #cccdb4;
+  font-size: 30pt;
+}
+.collumn{
+
+  width: 250px;
+  margin-left: 20px;
+}
+.collumn p{
+
+  color: #cccdb4;
+
+}
+.collums #c{
+  border-bottom: 2px dotted ;
+}
+.collums #b{
+  border-bottom: 2px dotted ;
+}
+.collums{
+
+  display: flex;
+  flex-direction: row;
+}
+h2{
+  color: #cccdb4;
+}
+#cont{
+  color: orange;
+  padding-left:80px;
+}
+.slide{
+  width: 420px;
+  height: 320px;
+  background-color: gray;
+}
+.slider{
+  width: 450px;
+  height: 350px;
+  border: 2px solid #cccdb4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+.slider-bottom {
+  width: 1000px;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.slide-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.slide-bottom h4 {
+  color: #cccdb4;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px dotted #cccdb4;
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottom-slide {
+  width: 290px;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.border-bottom p {
+  color: #cccdb4;
+  text-align: center;
+  width: 290px;
+}
