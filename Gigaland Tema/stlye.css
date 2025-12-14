@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    background-image: url(img/ekran.jpg);
+    width: 100%;
+    height: 730px;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    padding-top: 20px;
+}
+.header{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo{
+    width: 20%;
+    height: 50px;
+    
+}
+.search{
+    width: 20%;
+    height: 50px;
+}
+.menu{
+    width: 50%;
+    height: 50px;
+}
+.search input{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 16pt;
+}
+
+.liste{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    list-style-type: none;
+    height: 50px;
+}
+.liste li {
+    line-height: 40px;
+    width: 15%;
+    height: 100%;
+}
+.liste li a{
+    color: white;
+    font-size: 16pt;
+}
+.liste li:last-child{
+    background-color: rgb(140, 0, 255);
+    border-radius: 30px;
+    width: 25%;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.content{
+    width: 50%;
+    height: 100%;
+    color: beige;
+}
+.content h5{
+    color:rebeccapurple;
+    margin-bottom:10px ;
+}
+.content h1{
+    width: 600px;
+    font-size: 30pt;
+    word-wrap: break-word;
+    letter-spacing: 2px;
+    margin-bottom:10px ;
+
+}
+.content p{
+    margin-bottom:50px ;
+
+}
+.slider{
+    width: 40%;
+    height: 100%;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.button{
+    width:90px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rebeccapurple;
+    color: white;
+}
+.trackbar{
+    display: flex;
+    justify-content: space-between;
+}
+.collectibles{
+    font-size: 16pt;
+    margin: 40px;  
+}
+.auctions{
+    font-size: 16pt;
+    margin: 40px;  
+}
+.nft{
+    font-size: 16pt;
+    margin: 40px;  
+}
+.altbar {
+    width: 80%; 
+    height: 230px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.block {
+    background-color: rgb(41, 40, 40);
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
