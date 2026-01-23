@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="page-enter">
+    <div class="container">
+        <div class="leftsidebar">
+            <div class="container2">
+                <div class="logo">
+                    <h2><span class="moon">MOON</span><span class="light">LIGHT</span></h2>
+                </div>
+            </div>
+            <div class="menu">
+               <ul>
+                    <li><a href="home.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="entries.html"><i class="fa-solid fa-book"></i> Entries</a></li>
+                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> Work</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="rightsidebar">
+            <div class="main">
+                <div class="author">
+                <div class="img"><img src="../img/author_image.png" alt=""></div>
+                    <div class="author-text">
+                        <span><h1>MINGALAR PAR</h1></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magni hic? Quis cumque dignissimos cum hic iusto quos! Ex quae neque dignissimos incidunt corporis sit repudiandae placeat sunt reiciendis voluptatum?</p>      
+                            <div class="button">Read More</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', () => {
+        document.body.classList.add('page-enter-active');
+    });
+
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', e => {
+            const href = link.getAttribute('href');
+            if (href && href !== "#") {
+                e.preventDefault();
+                document.body.classList.remove('page-enter-active');
+                document.body.classList.add('page-exit');
+                setTimeout(() => {
+                    window.location = href;
+                }, 500); 
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

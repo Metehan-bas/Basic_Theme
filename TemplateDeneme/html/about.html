@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="page-enter">
+    <div class="container">
+        <div class="leftsidebar">
+            <div class="container2">
+                <div class="logo">
+                    <h2><span class="moon">MOON</span><span class="light">LIGHT</span></h2>
+                </div>
+            </div>
+            <div class="menu">
+               <ul>
+                    <li><a href="home.html" ><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="about.html" class="active"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="entries.html"><i class="fa-solid fa-book"></i> Entries</a></li>
+                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> Work</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="main-container">
+            <div class="rightsidebar">
+                <div class="p">
+                    <div class="wrap">
+                        <h1>ABOUT US</h1>
+                        <br>
+                        <br>    
+                        <p>Please tell your friends about templatemo website. A variety of free CSS templates are available for immediate downloads.</p>
+                        <br>
+                        <p>Phasellus vitae faucibus orci. Etiam eleifend orci sed faucibus semper. Cras varius dolor et augue fringilla, eu commodo sapien iaculis. Donec eget dictum tellus. Curabitur a interdum diam. Nulla vestibulum porttitor porta.</p>
+                        <br>
+                        <p>Phasellus vitae faucibus orci. Etiam eleifend orci sed faucibus semper. Cras varius dolor et augue fringilla, eu commodo sapien iaculis. Donec eget dictum tellus. Curabitur a interdum diam. Nulla vestibulum porttitor porta.</p>
+                        <br>                    
+                        <p>Nulla vitae interdum libero, vel posuere ipsum. Phasellus interdum est et dapibus tempus. Vestibulum malesuada lorem condimentum mauris ornare dapibus. Curabitur tempor ligula et placerat molestie.</p>
+                        <br>
+                        <p>Aliquam efficitur eu purus in interdum. Etiam tincidunt magna ex, sit amet lobortis felis bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>    
+                </div>
+                <div class="image"><img src="../img/about_image.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', () => {
+        document.body.classList.add('page-enter-active');
+    });
+
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', e => {
+            const href = link.getAttribute('href');
+            if (href && href !== "#") {
+                e.preventDefault();
+                document.body.classList.remove('page-enter-active');
+                document.body.classList.add('page-exit');
+                setTimeout(() => {
+                    window.location = href;
+                }, 500); 
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

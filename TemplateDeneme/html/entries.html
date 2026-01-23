@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="../css/entries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="page-enter">
+    <div class="container">
+        <div class="leftsidebar">
+            <div class="container2">
+                <div class="logo">
+                    <h2><span class="moon">MOON</span><span class="light">LIGHT</span></h2>
+                </div>
+            </div>
+            <div class="menu">
+               <ul>
+                    <li><a href="home.html" ><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="about.html" ><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="entries.html"class="active"><i class="fa-solid fa-book"></i> Entries</a></li>
+                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> Work</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="rightsidebar">
+            <div class="half">
+                <div class="half-container">
+                    <span><h1>Quisque commodo quam</h1></span>
+                    <span><p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum. Maecenas rhoncus nibh in mauris lobortis, a maximus diam faucibus. In et eros urna. Suspendisse potenti. Pellentesque commodo, neque nec molestie tempus, purus ante feugiat augue.</p></span>
+                    <br>
+                    <span><p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum. Maecenas rhoncus nibh in mauris lobortis, a maximus diam faucibus. In et eros urna. Suspendisse potenti. Pellentesque commodo, neque nec molestie tempus, purus ante feugiat augue.</p></span>
+                    <br>
+                    <span><p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum. Maecenas rhoncus nibh in mauris lobortis, a maximus diam faucibus. In et eros urna. Suspendisse potenti. Pellentesque commodo, neque nec molestie tempus, purus ante feugiat augue.</p></span>
+                </div>
+                <div class="half-image1"><img src="../img/first_service.jpg" alt=""></div>
+            </div>
+            <div class="half2">
+                <div class="half-image2"><img src="../img/second_service.jpg" alt=""></div>
+                <div class="half-container2">     
+                    <span><h1>Quisque commodo quam</h1></span>
+                    <span><p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum. Maecenas rhoncus nibh in mauris lobortis, a maximus diam faucibus. In et eros urna. Suspendisse potenti. Pellentesque commodo, neque nec molestie tempus, purus ante feugiat augue.</p></span>
+                    <br>
+                    <span><p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum. Maecenas rhoncus nibh in mauris lobortis, a maximus diam faucibus. In et eros urna. Suspendisse potenti. Pellentesque commodo, neque nec molestie tempus, purus ante feugiat augue.</p></span>
+                    <br>
+                    <span><p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum. Maecenas rhoncus nibh in mauris lobortis, a maximus diam faucibus. In et eros urna. Suspendisse potenti. Pellentesque commodo, neque nec molestie tempus, purus ante feugiat augue.</p></span>
+                </div>
+            </div>
+        </div>           
+    </div>               
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    window.addEventListener('load', () => {
+        document.body.classList.add('page-enter-active');
+    });
+
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', e => {
+            const href = link.getAttribute('href');
+            if (href && href !== "#") {
+                e.preventDefault();
+                document.body.classList.remove('page-enter-active');
+                document.body.classList.add('page-exit');
+                setTimeout(() => {
+                    window.location = href;
+                }, 500); 
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

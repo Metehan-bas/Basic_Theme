@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/first_bg.jpg);
+    background-repeat: repeat-x;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+
+}
+.page-enter {
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}
+
+.page-enter-active {
+    transform: translateX(0);
+}
+.page-exit {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+.container{
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.leftsidebar{ 
+    width: 90%;
+    height: 600px; 
+    background-color: rgba(0, 0, 0, 0.35);
+    padding-top: 30px;
+}
+.container2{
+    width: 100%;
+    height:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    height:80%;
+    background-color: rgba(128, 128, 128, 0.397);
+    border-radius:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.moon{
+    font-weight: bold;   
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.light{
+    font-weight:100;
+    color: white;
+    font-family:Garamond;
+}
+
+.menu{
+    width: 90%;
+    padding: 30px;
+}
+
+li {
+    list-style: none;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    transition: height 0.6s ease;
+    z-index: 0;
+}
+
+li:hover::after,
+li a.active::after {
+    height: 100%;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+li:hover a{
+    color: black;
+}
+li .active {
+    color: red;
+}
+
+i{
+    padding-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-container{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.rightsidebar{
+    width: 95%;
+    height: 600px; 
+    background-color: rgba(0, 0, 0, 0.35);
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 90%;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+}
+
+.author img{
+    padding-right: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.author-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.author h1{
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.author p{
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.button{
+    padding: 8px 12px;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+    text-align: center;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.buttons{
+    border: 2px solid white;
+    display: flex;
+
+}
+.home{
+    background-color: white;
+    color: black;
+}
